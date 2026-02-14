@@ -1,7 +1,7 @@
 import User from "../models/User.js";
 import Admin from "../models/Admin.js";
 import Society from "../models/Society.js";
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 import createToken from "../utils/createToken.js";
 
 export const login = async (req, res) => {
