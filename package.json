@@ -1,0 +1,24 @@
+{
+  "name": "nitjsr-campusinfo",
+  "version": "1.0.0",
+  "description": "Centralized web platform providing campus information of NIT Jamshedpur including societies, sports facilities, faculty cabin details, and interactive campus map.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivekkasaudhan/NITJSR-CampusInfo.git"
+  },
+  "keywords": [],
+  "author": "F5",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vivekkasaudhan/NITJSR-CampusInfo/issues"
+  },
+  "homepage": "https://github.com/vivekkasaudhan/NITJSR-CampusInfo#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

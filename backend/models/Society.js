@@ -1,20 +1,25 @@
 const SocietySchema = new mongoose.Schema({
   name: String,
-  email:{
-    type:String,
-    required:true,
-    unique:true
+  email: {
+    type: String,
+    required: true,
+    unique: true,
   },
-  password:String,
+  password: String,
   description: String,
 
-  posts: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Post"
-  }],
-
+  posts: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Post",
+    },
+  ],
+  verified: {
+    type: Boolean,
+    default: false,
+  },
   createdAt: {
     type: Date,
-    default: Date.now
-  }
+    default: Date.now,
+  },
 });
