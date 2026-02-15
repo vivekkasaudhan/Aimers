@@ -12,6 +12,9 @@ app.use(cookieParser());
 app.use(express.json());
 
 // base path set
+app.get("/",(req,res)=>{
+  res.send("Backend is running");
+})
 app.use("/api/admin", adminRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/society", societyRoutes);
