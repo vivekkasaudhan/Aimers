@@ -13,6 +13,10 @@ app.use(express.json());
 app.use("/api/society", societyRoutes);
 const PORT = process.env.PORT || 8000;
 
+
+   app.get("/",(req,res)=>{
+    res.send("Backend is running");
+   })
 app.listen(3000, () => {
     connectDB();
   console.log("Server running on port 3000");
