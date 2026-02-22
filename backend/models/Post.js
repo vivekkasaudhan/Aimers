@@ -4,7 +4,7 @@ const postSchema = new mongoose.Schema({
   society: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Society",
-    required: true,
+   
   },
 
   text: {
@@ -48,7 +48,7 @@ const postSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-});
+},{ timestamps: true });
 
 const Post = mongoose.model("Post", postSchema);
 
